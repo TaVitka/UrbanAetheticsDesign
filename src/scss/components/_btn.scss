@@ -1,0 +1,32 @@
+ ///* stylelint-disable declaration-no-important */
+ @use "../utils/functions/"as*;
+ @use "../utils/mixins"as*;
+
+ .btn {
+   padding: 9px rem(20);
+   color: var(--color-brown-400);
+   text-transform: capitalize;
+   border: 2px solid var(--color-brown-400);
+   border-radius: var(--radius-main);
+   background-color: transparent;
+   transition-property: background-color, color, border-color;
+   transition-duration: 0.4s;
+   max-width: fit-content;
+
+   &:hover,
+   &:focus,
+   &:active,
+   &--reverse {
+     color: var(--color-white);
+     background-color: var(--color-brown-400);
+   }
+
+   &--reverse {
+     &:hover,
+     &:focus,
+     &:active {
+       color: var(--color-brown-400);
+       background-color: transparent;
+     }
+   }
+ }

@@ -1,0 +1,32 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins/"as*;
+
+.hero {
+  $root: &;
+  padding: rem(68) 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    min-height: 646px;
+  }
+
+  &__content {
+    max-width: 597px;
+    width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 48px;
+    line-height: 1.5;
+    color: var(--color-brown-500);
+  }
+
+  .btn {
+    padding: 16px 20px;
+  }
+}

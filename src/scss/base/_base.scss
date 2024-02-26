@@ -98,8 +98,12 @@ section,
   &::before {
     content: "";
     position: absolute;
-    z-index: 1;
     inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.48) 53.89%, rgba(0, 0, 0, 0) 74.96%);
+    background: var(--gradient-primary);
+  }
+
+  * {
+    position: relative;
+    z-index: 1;
   }
 }
