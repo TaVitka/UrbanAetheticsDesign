@@ -31,12 +31,18 @@ h1 {
 }
 
 h2 {
+  margin-bottom: rem(46);
   font-size: clamp(24px, 2rem + 1vi, 36px);
   text-transform: capitalize;
 }
 
-h3 {
-  text-transform: capitalize;
+.title__link {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  font-weight: inherit;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.4s ease-in-out;
 }
 
 p {

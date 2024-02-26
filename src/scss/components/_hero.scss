@@ -3,12 +3,13 @@
 
 .hero {
   $root: &;
-  padding: rem(68) 0;
+  padding: 0;
 
   &__inner {
     display: flex;
     align-items: center;
     min-height: 646px;
+    padding: rem(68) 0;
   }
 
   &__content {

@@ -56,6 +56,10 @@ section,
   padding: rem(86) 0;
 }
 
+a {
+  display: block;
+}
+
 #form-request {
   position: fixed;
   z-index: 10;
