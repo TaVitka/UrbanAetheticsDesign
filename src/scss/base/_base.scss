@@ -7,6 +7,10 @@ body {
   overscroll-behavior-y: none;
 }
 
+body {
+  background-color: var(--color-cream-400);
+}
+
 .page {
   height: var(--vh);
   font-family: var(--font-family-primary);
@@ -45,6 +49,11 @@ body {
 
 .main {
   padding-top: var(--header-height);
+}
+
+section,
+.footer__content {
+  padding: rem(86) 0;
 }
 
 #form-request {
