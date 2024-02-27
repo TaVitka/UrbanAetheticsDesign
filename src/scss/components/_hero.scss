@@ -10,6 +10,7 @@
     align-items: center;
     min-height: 646px;
     padding: rem(68) 0;
+    @include cover-background;
   }
 
   &__content {
