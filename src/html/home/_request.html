@@ -1,0 +1,51 @@
+<section class="request">
+
+    <h2>
+      Request A Service
+    </h2>
+
+    <form class="request__form">
+      <div class="request__items">
+
+        <div class="request__item">
+          <label for="name">Name<span>*</span></label>
+          <input id="name" type="text" placeholder="Your full name" required>
+        </div>
+
+        <div class="request__item">
+          <label for="email">Email<span>*</span></label>
+          <input id="email" type="email" placeholder="Your email" required>
+        </div>
+
+        <div class="request__item request__item--phone">
+          <label for="phone">Phone<span>*</span></label>
+          <div class="input-decor">
+            <span>
+              +1
+            </span>
+            <input id="phone" type="tel" placeholder="Your phone number" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+          </div>
+        </div>
+
+        <div class="request__item">
+          <label for="subject">Subject<span>*</span></label>
+          <input id="subject" type="text" placeholder="Subject" required>
+        </div>
+
+      </div>
+
+      <div class="request__text">
+
+        <label for="message">Message<span>*</span></label>
+
+        <textarea name="message" id="message" placeholder="Write your message" required></textarea>
+      </div>
+
+      <button class="btn btn--send btn--reverse btn--higher" type="submit">
+          <span>
+            Send
+          </span>
+      </button>
+
+    </form>
+</section>
