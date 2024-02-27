@@ -19,7 +19,12 @@
       border-radius: var(--radius-larger);
       background-image: url("../images/home/about.jpg");
       @include cover-background;
+    }
 
+    &--approach {
+      &::before {
+        background-image: url('../images/about/approach.jpg');
+      }
     }
 
     &--reverse {

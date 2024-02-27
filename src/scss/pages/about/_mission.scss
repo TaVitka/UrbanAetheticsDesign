@@ -11,8 +11,8 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     overflow: hidden;
-    padding: rem(67) rem(67);
     gap: rem(74) 0;
   }
 

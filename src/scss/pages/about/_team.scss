@@ -1,0 +1,46 @@
+@use "../../utils/functions/"as*;
+@use "../../utils/mixins/"as*;
+
+.team {
+  overflow: hidden;
+  padding: rem(70) 0 rem(152);
+  text-align: center;
+
+  h2 {
+    margin: 0 auto 32px;
+  }
+
+  &__desc {
+    margin-bottom: rem(64);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    max-width: 266px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-cream-300);
+    border-radius: var(--radius-larger);
+
+    img {
+      height: 267px;
+      width: 100%;
+      margin-bottom: 24px;
+      border-radius: var(--radius-larger);
+    }
+  }
+
+  &__name {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: var(--fw-600);
+    font-size: clamp(18px, 1rem + 1vi, 20px);
+    line-height: 1.3;
+    letter-spacing: rem(0.2);
+    color: var(--color-brown-700);
+  }
+}
