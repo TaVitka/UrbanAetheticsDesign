@@ -19,6 +19,10 @@
 
   h1 {
     margin-bottom: 24px;
+
+    &.hero__title {
+      margin-bottom: 48px;
+    }
   }
 
   p {

@@ -21,6 +21,16 @@
       @include cover-background;
 
     }
+
+    &--reverse {
+      justify-content: flex-start;
+      padding: rem(80) 0 0;
+
+      &::before {
+        inset: 0 0 0 20%;
+        transform: translateY(rem(-80));
+      }
+    }
   }
 
   &__box {
@@ -40,5 +50,9 @@
 
   p {
     margin-bottom: 32px;
+  }
+
+  &--reverse {
+    padding: rem(calc(80 * 2)) 0 rem(86);
   }
 }
