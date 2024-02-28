@@ -13,8 +13,10 @@
   }
 
   &__inner {
+    max-width: 712px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 0 rem(80);
     width: 100%;
 
     @include media(mobile-l) {
@@ -36,9 +38,10 @@
   }
 
   &__list {
+    max-width: 317px;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin: 0 auto;
 
     @include media(mobile-l) {
       z-index: -1;
@@ -73,7 +76,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0 24px;
+    gap: 0 22px;
+    max-width: 315px;
+    width: 100%;
   }
 
   //.btn {

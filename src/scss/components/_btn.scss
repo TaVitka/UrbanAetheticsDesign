@@ -3,7 +3,9 @@
  @use "../utils/mixins"as*;
 
  .btn {
-   padding: 9px rem(20);
+   display: block;
+   min-width: fit-content;
+   padding: 9px  20px;
    color: var(--color-brown-400);
    text-transform: capitalize;
    border: 2px solid var(--color-brown-400);
@@ -81,7 +83,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     max-width: 368px;
+     max-width: 400px;
      width: 100%;
      margin: 0 auto;
    }
@@ -114,6 +116,7 @@
    &__pagination {
      position: static;
      max-width: fit-content;
+     margin-top: 8px;
 
      *[class].swiper-pagination-bullet {
        width: 16px;
@@ -122,7 +125,7 @@
        opacity: 0.5;
 
        &:not(:last-child) {
-         margin: 0 16px 0 0;
+         margin: 0 15px 0 0;
        }
 
        &-active {

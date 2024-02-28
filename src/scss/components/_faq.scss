@@ -50,6 +50,8 @@
     font-size: clamp(18px, 1rem + 1vi, 20px);
     color: var(--color-brown-500);
     cursor: pointer;
+    line-height: 1;
+    letter-spacing: rem(0.4);
 
     &::before {
       content: "";
