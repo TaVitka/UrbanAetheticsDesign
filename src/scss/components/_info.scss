@@ -1,0 +1,25 @@
+@use "../utils/functions/"as*;
+@use "../utils/mixins"as*;
+
+.info {
+  padding: rem(140) 0;
+
+  &__inner {
+    min-height: 648px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  h2 {
+    display: none;
+  }
+}
