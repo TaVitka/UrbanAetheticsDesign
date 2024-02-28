@@ -38,6 +38,10 @@ body {
   padding: 0 var(--container-offset);
   width: 100%;
   max-width: var(--container-width);
+
+  @include media(tablet) {
+    padding: 0 30px;
+  }
 }
 
 .site-container {
