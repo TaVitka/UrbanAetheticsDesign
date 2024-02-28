@@ -16,7 +16,7 @@
 
   &__list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   &__item {
@@ -32,6 +32,10 @@
       margin-bottom: 24px;
       border-radius: var(--radius-larger);
     }
+
+    &:not(:last-of-type) {
+      margin-right: 32px;
+    }
   }
 
   &__name {
@@ -42,5 +46,36 @@
     line-height: 1.3;
     letter-spacing: rem(0.2);
     color: var(--color-brown-700);
+  }
+
+  @include media(tablet) {
+    padding: rem(86) 0;
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      justify-items: center;
+    }
+
+    &__item {
+      &:not(:last-of-type) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include media(mobile-m) {
+    &__list {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      max-width: 100%;
+
+      img {
+        height: auto;
+      }
+    }
   }
 }

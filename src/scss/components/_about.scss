@@ -35,6 +35,20 @@
         inset: 0 0 0 20%;
         transform: translateY(rem(-80));
       }
+
+      @include media(tablet-wide) {
+        padding: rem(80) 0;
+
+        &::before {
+          transform: none;
+        }
+      }
+
+      @include media(mobile-m) {
+        &::before {
+          left: 0;
+        }
+      }
     }
 
     @include media(mobile-m) {
@@ -77,5 +91,9 @@
 
   &--reverse {
     padding: rem(calc(80 * 2)) 0 rem(86);
+
+    @include media(tablet-wide) {
+      padding: rem(86) 0;
+    }
   }
 }

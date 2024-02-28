@@ -31,4 +31,18 @@
     line-height: 1.5;
     color: var(--color-brown-500);
   }
+
+  @include media(mobile-l) {
+    &--project {
+      .hero__inner {
+        min-height: 300px;
+      }
+
+      .hero__content {
+        p {
+          font-weight: var(--fw-500);
+        }
+      }
+    }
+  }
 }

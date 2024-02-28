@@ -22,4 +22,21 @@
   h2 {
     display: none;
   }
+
+  @include media (desktop) {
+    padding: rem(86) 0;
+
+    &__inner {
+      min-height: auto;
+      padding-top: rem(200);
+      background-position: top center;
+    }
+
+    &__box {
+      max-width: 500px;
+      background-color: var(--color-cream-300);
+      border-radius: var(--radius-larger);
+      padding: 24px;
+    }
+  }
 }

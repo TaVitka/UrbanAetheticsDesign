@@ -7,7 +7,7 @@
 
   &__nav {
     display: flex;
-    gap: 0 16px;
+    gap: 16px;
     align-items: flex-start;
     margin-bottom: rem(59);
   }
@@ -116,6 +116,33 @@
 
       &:not(:last-of-type) {
         margin-bottom: 24px;
+      }
+    }
+  }
+
+  @include media(mobile-l) {
+    padding: rem(50) 0;
+
+    &__nav {
+      flex-direction: column;
+    }
+
+    &__back {
+      padding-left: 36px;
+
+      &::before {
+        left: 0;
+      }
+    }
+
+    h1 {
+      width: 90%;
+    }
+
+    &__body {
+      img {
+        height: auto;
+        min-height: 350px;
       }
     }
   }

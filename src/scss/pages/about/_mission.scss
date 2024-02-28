@@ -45,4 +45,26 @@
       letter-spacing: rem(0.2);
     }
   }
+
+  @include media(tablet-wide) {
+    padding: rem(86) 0;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include media(mobile-l) {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__item {
+      padding: 15px;
+
+      &:last-of-type {
+        grid-column: auto;
+      }
+    }
+  }
 }
