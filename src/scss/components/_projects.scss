@@ -68,4 +68,18 @@
       margin-bottom: 0;
     }
   }
+
+  @include media(tablet-wide) {
+    padding: rem(86) 30px;
+
+    &__image {
+      height: auto;
+    }
+  }
+
+  @include media(mobile-m) {
+    &__image {
+      margin-bottom: 40px;
+    }
+  }
 }

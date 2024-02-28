@@ -57,17 +57,25 @@
             @include cover-background;
             background-image: url('../images/icons/usa-flag.svg');
           }
+
+          @include media(mobile-l) {
+            display: none;
+          }
         }
 
         input {
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
+
+          @include media(mobile-l) {
+            border-top-left-radius: var(--radius-main);
+            border-bottom-left-radius: var(--radius-main);
+          }
         }
 
       }
     }
   }
-
 
   label,
   input,
@@ -112,5 +120,13 @@
     resize: none;
     padding-top: 8px;
     border-color: transparent;
+  }
+
+  @include media(tablet) {
+    padding: rem(86) 0;
+
+    &__items {
+      grid-template-columns: 1fr;
+    }
   }
 }

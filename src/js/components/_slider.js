@@ -16,6 +16,11 @@ const swiperProjects = new Swiper('.projects__slider', {
     nextEl: '.btn__items .btn--next',
     prevEl: '.btn__items .btn--prev',
   },
+  breakpoints: {
+    1180: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 // links from <a> to target slide

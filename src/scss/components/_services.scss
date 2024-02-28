@@ -16,7 +16,7 @@
   }
 
   img {
-    border-radius: var(--radius-main);
+    border-radius: var(--radius-larger);
     margin-bottom: 16px;
   }
 
@@ -33,5 +33,25 @@
   &__text {
     margin-bottom: 32px;
     font-size: 18px;
+  }
+
+  @include media(tablet) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+  }
+
+  @include media(mobile-l) {
+    &__grid {
+      grid-template-columns: 1fr;
+      justify-items: stretch;
+    }
+
+    img {
+      width: 100%;
+    }
+
   }
 }

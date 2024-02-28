@@ -114,4 +114,10 @@ a {
     position: relative;
     z-index: 1;
   }
+
+  @include media(mobile-l) {
+    &::before {
+      background: var(--color-cream-100);
+    }
+  }
 }
