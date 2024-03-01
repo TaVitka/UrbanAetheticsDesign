@@ -20,14 +20,12 @@
   }
 
   &__item {
-    max-width: 266px;
     width: 100%;
     padding: 20px;
     background-color: var(--color-cream-300);
     border-radius: var(--radius-larger);
 
     img {
-      height: 267px;
       width: 100%;
       margin-bottom: 24px;
       border-radius: var(--radius-larger);
@@ -62,20 +60,18 @@
       &:not(:last-of-type) {
         margin-right: 0;
       }
+
+      img {
+        border-radius: var(--radius-huge);
+      }
     }
   }
 
   @include media(mobile-m) {
+    padding: rem(70) 0;
+
     &__list {
       grid-template-columns: 1fr;
-    }
-
-    &__item {
-      max-width: 100%;
-
-      img {
-        height: auto;
-      }
     }
   }
 }

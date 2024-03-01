@@ -20,61 +20,7 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 32px;
-  }
-
-  &__item {
-
-    &--phone {
-
-      .input-decor {
-        display: flex;
-        align-items: center;
-
-        span {
-          position: relative;
-          display: block;
-          background-color: var(--color-cream-300);
-          border-top-left-radius: var(--radius-main);
-          border-bottom-left-radius: var(--radius-main);
-          border-right: 1px solid var(--color-gray-300);
-          padding: 23px 30px 23px 54px;
-          line-height: 1;
-          height: 62px;
-          color: var(--color-dark-700);
-          font-size: 18px;
-          font-weight: var(--fw-500);
-
-          &::before {
-            content: "";
-            position: absolute;
-            left: 24px;
-            top: calc(50% + 1px);
-            transform: translateY(-50%);
-            width: 16px;
-            height: 16px;
-            @include cover-background;
-            background-image: url('../images/icons/usa-flag.svg');
-          }
-
-          @include media(mobile-l) {
-            display: none;
-          }
-        }
-
-        input {
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0;
-
-          @include media(mobile-l) {
-            border-top-left-radius: var(--radius-main);
-            border-bottom-left-radius: var(--radius-main);
-          }
-        }
-
-      }
-    }
   }
 
   label,

@@ -2,7 +2,8 @@
  @use "../utils/functions/"as*;
  @use "../utils/mixins"as*;
 
- .btn {
+ *[class].btn,
+ *[class].btn.formsapp-popup-button {
    display: block;
    min-width: fit-content;
    padding: 9px  20px;
@@ -18,12 +19,14 @@
    &:hover,
    &:focus,
    &:active,
-   &--reverse {
+   &--reverse,
+   &--reverse.formsapp-popup-button {
      color: var(--color-white);
      background-color: var(--color-brown-400);
    }
 
-   &--higher {
+   &--higher,
+   &--higher.formsapp-popup-button {
      padding: 16px 20px;
    }
 
@@ -152,10 +155,12 @@
        &:not(:last-child) {
          margin: 0 15px 0 0;
        }
-
-       &-active {
-         opacity: 1;
-       }
      }
+
+
+     *[class].swiper-pagination-bullet-active {
+       opacity: 1;
+     }
+
    }
  }

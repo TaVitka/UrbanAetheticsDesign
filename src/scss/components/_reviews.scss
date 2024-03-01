@@ -20,7 +20,7 @@
     width: 100%;
     display: grid;
     grid-template-rows: repeat(4, auto);
-    padding: 40px;
+    padding: 35px 40px;
     background-color: var(--color-cream-300);
     border-radius: var(--radius-larger);
   }
@@ -40,8 +40,9 @@
   }
 
   p {
+    min-height: 70px;
     margin-bottom: 50px;
-    letter-spacing: rem(0.3);
+    letter-spacing: rem(0.4);
     line-height: 1.2;
   }
 
@@ -63,5 +64,9 @@
       align-items: center;
       gap: 24px;
     }
+  }
+
+  @include media(mobile-s) {
+    padding:rem(86) 0 0;
   }
 }

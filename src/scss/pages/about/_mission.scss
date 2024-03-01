@@ -56,7 +56,8 @@
 
   @include media(mobile-l) {
     &__grid {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: 1fr;
+      gap: rem(30);
     }
 
     &__item {
@@ -66,5 +67,9 @@
         grid-column: auto;
       }
     }
+  }
+
+  @include media(mobile-s) {
+    padding:rem(86) 0 0;
   }
 }

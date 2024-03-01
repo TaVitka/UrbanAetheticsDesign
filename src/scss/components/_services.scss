@@ -16,7 +16,7 @@
   }
 
   img {
-    border-radius: var(--radius-larger);
+    border-radius: var(--radius-main);
     margin-bottom: 16px;
   }
 
@@ -39,6 +39,12 @@
     &__grid {
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
+    }
+
+    &__article {
+      img {
+        border-radius: var(--radius-huge);
+      }
     }
 
   }

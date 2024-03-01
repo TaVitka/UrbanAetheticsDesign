@@ -9,6 +9,7 @@ h3 {
 h1,
 h2,
 h3 {
+  font-family: var(--font-family-primary);
   overflow: hidden;
   width: fit-content;
   font-size: clamp(2.5rem, 2.2451rem + 1.0458vi, 3.5rem);
@@ -17,11 +18,19 @@ h3 {
 }
 
 a,
-button {
+button,
+*[class].btn.formsapp-popup-button {
+  font-family: var(--font-family-primary);
   font-weight: var(--fw-600);
   font-size: 18px;
-  font-family: var(--font-family-primary);
   line-height: 1;
+}
+
+input,
+label,
+summary,
+textarea {
+  font-family: var(--font-family-primary);
 }
 
 h1 {

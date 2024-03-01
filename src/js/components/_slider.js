@@ -4,6 +4,8 @@ const swiperProjects = new Swiper('.projects__slider', {
   slidesPerView: "auto",
   spaceBetween: 0,
   centeredSlides: true,
+  centeredSlidesBounds: true,
+  speed: 1000,
   modules: [Navigation, Scrollbar, Pagination, EffectFade],
   pagination: {
     clickable: true,
@@ -23,10 +25,16 @@ const swiperProjects = new Swiper('.projects__slider', {
   },
 });
 
+function initializeSwiper(initialSlideIndex, swiperSlider) {
+  var swiper = new Swiper(swiperSlider, {
+    initialSlide: initialSlideIndex,
+  });
+}
+
 // links from <a> to target slide
 window.addEventListener('DOMContentLoaded', function(){
 
-  function linkToSlide(slider) {
+  function linkToSlide(slider, sliderClassName) {
 
     let slideId = window.location.hash.substring(1);
     let targetSlide = document.getElementById(slideId);
@@ -38,9 +46,10 @@ window.addEventListener('DOMContentLoaded', function(){
     let slidesArr = Array.from(targetSlide.parentElement.children);
     let indexOfTargetSlide = slidesArr.indexOf(targetSlide);
 
-    slider.slideTo(indexOfTargetSlide);
+    initializeSwiper(indexOfTargetSlide, sliderClassName);
   }
 
 
-  linkToSlide(swiperProjects);
+
+  linkToSlide(swiperProjects, '.projects__slider');
 });

@@ -19,13 +19,19 @@
     letter-spacing: rem(0.2);
   }
 
-  &__intro {
-    margin-bottom: 48px;
-  }
-
   p,
   h2 {
     margin-bottom: 24px;
+  }
+
+  p {
+    &:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   h2 {
@@ -50,20 +56,6 @@
     &::marker {
       content: "✓";
       font-family: system-ui;
-    }
-  }
-
-  &__inner {
-    &:not(:last-of-type) {
-      margin-bottom: 24px;
-    }
-
-    p:not(:last-of-type) {
-      margin-bottom: 12px;
-    }
-
-    p:last-of-type {
-      margin-bottom: 0;
     }
   }
 

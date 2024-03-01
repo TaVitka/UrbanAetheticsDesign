@@ -13,7 +13,6 @@ body {
 
 .page {
   height: var(--vh);
-  font-family: var(--font-family-primary);
   font-weight: var(--fw-400);
   font-style: normal;
   font-size: clamp(16px, 1vw, 20px);
@@ -38,10 +37,6 @@ body {
   padding: 0 var(--container-offset);
   width: 100%;
   max-width: var(--container-width);
-
-  @include media(tablet) {
-    padding: 0 30px;
-  }
 }
 
 .site-container {
@@ -58,6 +53,10 @@ body {
 section,
 .footer__content {
   padding: rem(86) 0;
+
+  @include media(mobile-s) {
+    padding:rem(86) 0 0;
+  }
 }
 
 a {
@@ -115,9 +114,9 @@ a {
     z-index: 1;
   }
 
-  @include media(mobile-l) {
+  @include media(tablet) {
     &::before {
-      background: var(--color-cream-100);
+      background: var(--gradient-intense);
     }
   }
 }

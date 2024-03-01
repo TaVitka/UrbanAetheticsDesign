@@ -4,11 +4,11 @@
 
 :root {
   --content-width: 1218px;
-  --container-offset: 112px;
+  --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // font-family
-  --font-family-primary: "Inter", sans-serif;;
+  --font-family-primary: "Inter", sans-serif;
 
   // font-weight
   --fw-400: 400;
@@ -36,6 +36,7 @@
   --radius-main: 12px;
   --radius-medium: 16px;
   --radius-larger: 24px;
+  --radius-huge: 55px;
 
   // shadow
   --shadow-primary: 0px 8px 8px -4px #1118270A;
@@ -44,4 +45,5 @@
   // gradient
   --gradient-primary: linear-gradient(90deg, rgba(243,227,212,1) 0%, rgba(243,227,212,0) 90%);
   --gradient-secondary: linear-gradient(0deg, rgba(68,44,19,1) 0%, rgba(68,44,19,0) 100%);
+  --gradient-intense: linear-gradient(90deg, #f3e3d4 0%, #f3e3d4c9 40%, #f3e3d400 100%);
 }
