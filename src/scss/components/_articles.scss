@@ -54,18 +54,20 @@
     align-items: center;
     gap: 0 4px;
 
-    time {
-      position: relative;
+    time,
+    span {
+      font-family: var(--font-family-primary);
       color: var(--color-brown-400);
       font-size: clamp(16px, 1rem + 1vi, 20px);
       font-weight: var(--fw-500);
       line-height: 1.2;
+    }
 
-      &:first-child {
-        padding-right: 8px;
-      }
+    time {
+      position: relative;
+      padding-right: 8px;
 
-      &:first-child::after {
+      &::after {
         content: "";
         position: absolute;
         top: 50%;
