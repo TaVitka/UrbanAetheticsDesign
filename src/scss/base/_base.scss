@@ -55,12 +55,12 @@ section,
   padding: rem(86) 0;
 
   @include media(mobile-s) {
-    padding:rem(86) 0 0;
+    padding: 40px 0 0;
   }
 }
 
 a {
-  display: block;
+  display: inline-block;
 }
 
 #form-request {
@@ -117,6 +117,12 @@ a {
   @include media(tablet) {
     &::before {
       background: var(--gradient-intense);
+    }
+  }
+
+  @include media(mobile-l) {
+    &::before {
+      background: var(--gradient-full);
     }
   }
 }

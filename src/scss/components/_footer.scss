@@ -123,11 +123,23 @@
     }
   }
 
-  @include media(tablet-wide) {
+  @include media(tablet) {
+    &__inner {
+      max-width: 500px;
+      margin: 0 auto;
+
+    }
+
     &__inner,
     &__copyright {
-      flex-direction: column-reverse;
+      flex-direction: column;
       gap: 24px 0;
+    }
+
+    &__contacts {
+      flex-direction: column-reverse;
+      display: flex;
+      gap: 12px;
     }
 
     &__copyright {

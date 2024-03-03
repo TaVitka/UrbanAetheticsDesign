@@ -49,6 +49,8 @@
   }
 
   &__item {
+    white-space: nowrap;
+
     &:not(:last-of-type, .footer .nav__item) {
       margin-right: rem(32);
 
@@ -63,6 +65,7 @@
   }
 
   &__link {
+    text-transform: capitalize;
     font-weight: var(--fw-400);
     color: var(--color-brown-400);
 
@@ -90,7 +93,7 @@
     gap: 20px;
 
     .logo {
-      max-width: 215px;
+      max-width: 250px;
     }
 
     &__inner {

@@ -45,5 +45,6 @@
   // gradient
   --gradient-primary: linear-gradient(90deg, rgba(243,227,212,1) 0%, rgba(243,227,212,0) 90%);
   --gradient-secondary: linear-gradient(0deg, rgba(68,44,19,1) 0%, rgba(68,44,19,0) 100%);
-  --gradient-intense: linear-gradient(90deg, #f3e3d4 0%, #f3e3d4c9 40%, #f3e3d400 100%);
+  --gradient-intense: linear-gradient(90deg, #f3e3d4 20%, #f3e3d499 75%, #f3e3d400 100%);
+  --gradient-full: linear-gradient(90deg, #f3e3d4 25%, #f3e3d499 90%);
 }

@@ -53,6 +53,8 @@
     &__grid {
       grid-template-columns: 1fr;
       justify-items: stretch;
+      max-width: 576px;
+      margin: 0 auto;
     }
 
     img {
